@@ -319,18 +319,18 @@ export const DataTableCrudDemo = () => {
           className="p-button-rounded p-button-success mr-2"
           onClick={() => editProduct(rowData)}
         />
-        <Button
+        {/* <Button
           icon="pi pi-trash"
           className="p-button-rounded p-button-warning"
           onClick={() => confirmDeleteProduct(rowData)}
-        />
+        /> */}
       </React.Fragment>
     );
   };
 
   const header = (
     <div className="table-header">
-      <h5 className="mx-0 my-1">Manage Products</h5>
+      <h3 className="mx-0 my-1">Dispatch Board</h3>
       <span className="p-input-icon-left">
         <i className="pi pi-search" />
         <InputText
@@ -395,11 +395,11 @@ export const DataTableCrudDemo = () => {
       <Toast ref={toast} />
 
       <div className="card">
-        <Toolbar
+        {/* <Toolbar
           className="mb-4"
           left={leftToolbarTemplate}
           right={rightToolbarTemplate}
-        ></Toolbar>
+        ></Toolbar> */}
 
         <DataTable
           ref={dt}
@@ -423,7 +423,7 @@ export const DataTableCrudDemo = () => {
           ></Column>
           <Column
             field="code"
-            header="Code"
+            header="Load ID"
             sortable
             style={{ minWidth: "12rem" }}
           ></Column>
@@ -433,11 +433,11 @@ export const DataTableCrudDemo = () => {
             sortable
             style={{ minWidth: "16rem" }}
           ></Column>
-          <Column
+          {/* <Column
             field="image"
             header="Image"
             body={imageBodyTemplate}
-          ></Column>
+          ></Column> */}
           <Column
             field="price"
             header="Price"
