@@ -126,7 +126,7 @@ export const NavigationBar = () => {
       <div className="card">
         <Menubar
           model={items}
-          className="font-bold text-lg w-screen justify-content-center"
+          className="font-bold text-lg w-auto justify-content-start"
         />
         {/* end={end} start={start} style={styles} in menu props*/}
       </div>
